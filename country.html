@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/country.css">
+    <title>Countries</title>
+</head>
+
+<body>
+
+    <header id="home" class="main-header">
+        <div class="myNavbar">
+            <h1 class="brand">
+                <i class="fa-solid fa-earth-europe"></i>
+                <span>Countries</span> Location
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="btnCountriesAll">
+                <div class="panel active" style="background-image: url('img/regionImg/africas.jpg');">
+                    <h3 class="panel-header px-3">Africa</h3>
+                    <a class="btn btn-secondary active btn-lg btn-countries" role="button">Show/Africa</a>
+                </div>
+                <div class="panel" style="background-image: url('img/regionImg/americas.jpg');">
+                    <h3 class="panel-header px-3">Americas</h3>
+                    <a class="btn btn-secondary btn-lg btn-countries" role="button">Show/Americas</a>
+                </div>
+                <div class="panel" style="background-image: url('img/regionImg/asia.jpg');">
+                    <h3 class="panel-header px-3">Asia</h3>
+                    <a class="btn btn-secondary btn-lg btn-countries" role="button">Show/Asia</a>
+                </div>
+                <div class="panel" style="background-image: url('img/regionImg/europe2.jpg');">
+                    <h3 class="panel-header px-3">Europe</h3>
+                    <a class="btn btn-secondary btn-lg btn-countries" role="button">Show/Europe</a>
+                </div>
+                <div class="panel" style="background-image: url('img/regionImg/oceania.jpg');">
+                    <h3 class="panel-header px-3">Ocenia</h3>
+                    <a class="btn btn-secondary btn-lg btn-countries" role="button">Show/Oceania</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <!--* loading -->
+        <section id="country-data">
+            <div class="loading-center">
+                <div id="loading" class="center">
+                    <div class="ring"></div>
+                    <span>loading...</span>
+                </div>
+            </div>
+
+            <!--* country-card -->
+            <div class="row justify-content-center cards-country-bg my-4" id="countriesAll">
+
+            </div>
+
+            <!--* country-details -->
+            <div class="details-country"><button id="detailsCountry" type="button" class="btn btn-dark country-details-btn">Show</button></div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+<script src="js/country.js"></script>
+
+</html>
